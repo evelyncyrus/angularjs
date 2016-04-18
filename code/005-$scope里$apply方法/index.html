@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 </head>
 <body>
-    <div ng-app>
-        <div ng-controller="firstController">
-            {{date}}
-        </div>
-    </div>
+<div ng-app>
+  <div ng-controller="firstController">
+    {{date}}
+  </div>
+</div>
 
-    <div id="hint">
-    </div>
-    <script>
-        var obj = {
-            b:300,
-            set:function(key,val){
-                obj[key] = val;
-                document.getElementById('hint').innerHTML= val;
-                console.log(key);
-            }
-        }
-        obj.set('b',800);
-    </script>
+<div id="hint">
+</div>
+<script>
+  var obj = {
+    b: 300,
+    set: function (key, val) {
+      obj[key] = val;
+      document.getElementById('hint').innerHTML = val;
+      console.log(key);
+    }
+  }
+  obj.set('b', 800);
+</script>
 <script type="text/javascript" src="app/index.js"></script>
-<script type="text/javascript" src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+<script type="text/javascript" src="../../vendor/angular/angularjs.js"></script>
 </body>
 </html>
